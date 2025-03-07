@@ -1,0 +1,233 @@
+/* login.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(360deg, #8e699d, #5d5da8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-height: 100vh;
+  padding: 20px; 
+  box-sizing: border-box;
+}
+
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8); 
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-card {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.login-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4a4a4a;
+  margin-bottom: 10px;
+}
+
+.login-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.login-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #5a3e85; 
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.5s ease-in-out;
+}
+
+.login-button:hover {
+  background: #4a336d;
+}
+
+@keyframes rotateGoogle {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.google-icon {
+  font-size: 24px;
+  animation: rotateGoogle 3s linear infinite; 
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+/* Dashboard de alumno */
+
+.alumno-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 1s ease-in-out;
+}
+
+.student-card {
+  width: 320px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.profile-section {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #5d5da8;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info-section {
+  margin-top: 15px;
+}
+
+.student-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.student-id {
+  font-size: 14px;
+  color: #666;
+}
+
+.qr-section {
+  margin-top: 15px;
+}
+
+.qr-code {
+  width: 100px;
+  height: 100px;
+}
+
+
+/* Dashboar de policia */
+
+
+
+/* Dashboard de administrador */
+
+.file-input {
+  display: none;
+}
+
+.admin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: transparent;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.admin-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  padding: 25px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.admin-input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #222;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+.admin-input:focus {
+  border-color: #ff6600;
+  outline: none;
+}
+
+.admin-button {
+  width: 100%;
+  padding: 12px;
+  background: #ff6600;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.admin-button:hover {
+  background: #cc5200;
+}
+
+.upload-label {
+  display: block;
+  background: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  margin: 10px 0;
+  transition: background 0.3s;
+}
+
+.upload-label:hover {
+  background: #ff6600;
+}
+
+.file-input {
+  display: none;
+}
